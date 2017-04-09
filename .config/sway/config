@@ -13,36 +13,19 @@ set $left h
 set $down j
 set $up k
 set $right l
-# Your preferred terminal emulator
+
+# Terminal emulator
 set $term termite
-# Your preferred application launcher
-set $menu dmenu_run
+# Application launcher
+# Note: Height is manually adjusted based on sway-bar font size!!
+set $menu dmenu_run -h 19 -fn "DejaVuSans-8" 
+# File browser
+set $browser ranger
 
-### Output configuration
-#
 # Default wallpaper (more resolutions are available in /usr/share/sway/)
-output * bg /usr/share/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-#
-# Example configuration:
-#
-#   output HDMI-A-1 resolution 1920x1080 position 1920,0
-#
-# You can get the names of your outputs by running: swaymsg -t get_outputs
+output * bg /home/fancy/misc/pictures/mob_psycho_bg fill 
 
-### Input configuration
-#
-# Example configuration:
-#
-#   input "2:14:SynPS/2_Synaptics_TouchPad" {
-#       dwt enabled
-#       tap enabled
-#       natural_scroll enabled
-#       middle_emulation enabled
-#   }
-#
-# You can get the names of your inputs by running: swaymsg -t get_inputs
-# The escape symbol "\" has to be removed.
-# Read `man 5 sway-input` for more information about this section.
+# Input configuration
 input "2:8:AlpsPS/2_ALPS_GlidePoint" {
 	dwt enabled
 	tap enabled
@@ -62,6 +45,9 @@ input "2:8:AlpsPS/2_ALPS_GlidePoint" {
 
     # start your launcher
     bindsym $mod+d exec $menu
+
+    # start file browser
+    bindsym $mod+o exec $term -e $browser
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -188,12 +174,15 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-#
-# Status Bar:
-#
-# Read `man 5 sway-bar` for more information about this section.
+# Sway Look & Feel | `man 5 sway` for more info 
+gaps outer 8
+gaps inner 5
+hide_edge_borders both
+
+# Status bar | `man 5 sway-bar` for more info.
 bar {
     position top
+    font DejaVu Sans 8
     colors {
         statusline #ffffff
         background #323232
