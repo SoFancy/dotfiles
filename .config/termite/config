@@ -2,34 +2,34 @@
 font = Source Code Pro 8
 
 [colors]
-# Color theme is Base16 Ashes
-foreground	= #C7CCD1
-foreground_bold	= #C7CCD1
-cursor		= #C7CCD1 
-background	= #1C2023
+# Color theme is Base16 Pico
+foreground	= #c2c3c7
+foreground_bold	= #c2c3c7
+cursor		= #c2c3c7
+background	= #000000
 
 # 16 color space
-color0	= #1C2023
-color1	= #C7AE95
-color2	= #95C7AE
-color3	= #AEC795
-color4	= #AE95C7
-color5	= #C795AE
-color6	= #95AEC7
-color7	= #C7CCD1
-color8	= #747C84
-color9	= #C7AE95
-color10	= #95C7AE
-color11	= #AEC795
-color12	= #AE95C7
-color13	= #C795AE
-color14	= #95AEC7
-color15	= #F3F4F5
+color0	= #000000
+color1	= #ff004d
+color2	= #00e756
+color3	= #fff024
+color4	= #83769c
+color5	= #ff77a8
+color6	= #29adff
+color7	= #5f574f
+color8	= #008751
+color9	= #ff004d
+color10	= #00e756
+color11	= #fff024
+color12	= #83769c
+color13	= #ff77a8
+color14	= #29adff
+color15	= #fff1e8
 
 # 256 color space
-color16	= #C7C795
-color17	= #C79595
-color18	= #393F45
-color19	= #565E65
-color20	= #ADB3BA
-color21	= #DFE2E5
+color16	= #ffa300
+color17	= #ffccaa
+color18	= #1d2b53
+color19	= #7e2553
+color20	= #ab5236
+color21	= #c2c3c7
